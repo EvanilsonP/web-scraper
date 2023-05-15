@@ -3,6 +3,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const axios = require('axios');
 const cheerio = require('cheerio');
+const cors = require('cors');
+
+app.use(cors());
 
 const url = 'https://www.imdb.com/chart/top/';
 
